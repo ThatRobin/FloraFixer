@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "florafixer",
+  "version": "0.1.0",
+  "name": "Flora Fixer",
+  "description": "",
+  "authors": [],
+  "contact": {
+    "repo": "https://github.com/robin/FloraFixer"
+  },
+  "license": "MIT",
+  "icon": "assets/florafixer/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "io.github.thatrobin.florafixer.client.FloraFixerClient"
+    ],
+    "main": [
+      "io.github.thatrobin.florafixer.FloraFixer"
+    ],
+    "cardinal-components-world": [
+      "io.github.thatrobin.florafixer.component.ModComponents"
+    ]
+  },
+  "custom": {
+    "cardinal-components": [
+      "flora_fixer:flower_data"
+    ]
+  },
+  "mixins": [
+    "FloraFixer.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}

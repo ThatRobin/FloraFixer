@@ -1,0 +1,17 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "io.github.thatrobin.florafixer.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "mixins": [
+    "AbstractBlockAbstractBlockStateMixin",
+    "AbstractBlockSettingsMixin",
+    "WorldMixin"
+  ],
+  "client": [
+    "ChunkRendererRegionAccessor"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
